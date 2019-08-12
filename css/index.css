@@ -104,6 +104,29 @@ header .navigation a {
 .header-left * {
 	text-align: center;
 }
+
+@media (max-width: 800px) {
+    .header-left * {
+        text-align: center;
+        margin-left: 125px;
+    }
+
+    .header-left h1 {
+        margin-top: 70px;
+        font-size: 80px;
+    
+        
+    }
+     .header-left a {
+        width: 200px;
+        border: 2px solid rgb(92, 92, 92);
+        padding:5px 40px 5px 40px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: black;
+     } 
+}
+
 .header-left h1 {
 	margin-top: 70px;
 	font-size: 80px;
@@ -117,7 +140,8 @@ header .navigation a {
 	box-sizing: border-box;
 	text-decoration: none;
 	color: black;
- }
+ } 
+
  .header-3 {
 	 display:flex;
 	 justify-content: space-between;
@@ -126,8 +150,13 @@ header .navigation a {
 	 padding-bottom: 40px;
 	 padding-top: 40px;
 	 align-content: baseline;
-	 flex-grow: 1;
-	 flex-shrink: 1;
+ }
+
+ @media (max-width: 800px) {
+     .header-3 .header-img{
+        display: none;
+     }
+     
  }
 
  hr {
