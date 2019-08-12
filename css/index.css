@@ -86,8 +86,19 @@ header .navigation a {
 	flex-grow: 1;
 	flex-shrink: 1;
  }
+
+ @media (max-width: 800px) {
+    .head-section {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+     }
+ }
  .header-logo {
-	padding-left:110px;
+	margin-bottom: 40px;
  }
 
 .header-left * {
