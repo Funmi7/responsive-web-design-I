@@ -67,15 +67,31 @@ h1, h2, h3, h4, h5 {
 /* My code starts here */
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
 
 header .navigation a {
 
 	text-decoration: none;
 	color: darkgray;
-	padding-right: 80px;
+	padding-right: 100px;
+}
+
+@media (max-width: 800px) {
+    header .navigation a {
+
+        text-decoration: none;
+        color: darkgray;
+        padding-right: 50px;
+    }
 }
 
 .head-section {
@@ -83,8 +99,6 @@ header .navigation a {
 	padding-top: 40px;
 	display: flex;
 	align-items: center;
-	flex-grow: 1;
-	flex-shrink: 1;
  }
 
  @media (max-width: 800px) {
@@ -92,9 +106,6 @@ header .navigation a {
         padding-top: 20px;
         display: flex;
         flex-direction: column-reverse;
-        align-items: center;
-        flex-grow: 1;
-        flex-shrink: 1;
      }
  }
  .header-logo {
@@ -108,31 +119,21 @@ header .navigation a {
 @media (max-width: 800px) {
     .header-left * {
         text-align: center;
-        margin-left: 125px;
+        width: 400px;
     }
-
-    .header-left h1 {
-        margin-top: 70px;
-        font-size: 80px;
-    
-        
-    }
-     .header-left a {
-        width: 200px;
-        border: 2px solid rgb(92, 92, 92);
-        padding:5px 40px 5px 40px;
-        box-sizing: border-box;
-        text-decoration: none;
-        color: black;
-     } 
 }
 
 .header-left h1 {
 	margin-top: 70px;
 	font-size: 80px;
-
-	
 }
+
+@media (max-width: 800px){
+    .header-left h1 {
+         font-size: 60px;
+        }    
+}
+	
  .header-left a {
 	width: 200px;
 	border: 2px solid rgb(92, 92, 92);
@@ -141,6 +142,26 @@ header .navigation a {
 	text-decoration: none;
 	color: black;
  } 
+
+ @media (max-width: 800px) {
+    .header-left a {
+        width: 180px;
+        border: 2px solid rgb(92, 92, 92);
+        padding:5px 40px 5px 40px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: black;
+        font: 20px;
+     }
+ }
+
+ .header-3 .header-img {
+     width: 400px;
+ }
+
+ #img-header {
+     max-width: 100%;
+ }
 
  .header-3 {
 	 display:flex;
@@ -173,10 +194,24 @@ header .navigation a {
 	justify-content: space-around;
  }
 
+ @media (max-width: 800px) {
+ .top-content {
+	display: flex;
+ }
+}
  .top-content .features {
      margin-right: 20px;
  }
 
+ @media (max-width: 800px) {
+ .top-content .features {
+        margin-right: 10px;
+        width: 350px;
+    }
+    .top-content .about {
+        width: 350px;
+    }
+}
 .middle-img {
 	width: 98%;
 	padding-left:15px;
